@@ -130,25 +130,23 @@ int main()
 
     printf("\n");
 
-    if (escolha == 1)
+    switch (escolha)
     {
+    case 1:
         comparar_populacao(nome_a, nome_b, populacao_a, populacao_b);
-    }
-    else if (escolha == 2)
-    {
+        break;
+    case 2:
         comparar_area(nome_a, nome_b, area_a, area_b);
-    }
-    else if (escolha == 3)
-    {
+        break;
+    case 3:
         comparar_pib(nome_a, nome_b, pib_a, pib_b);
-    }
-    else if (escolha == 4)
-    {
+        break;
+    case 4:
         comparar_densidade(nome_a, nome_b, densidade_a, densidade_b);
-    }
-    else if (escolha == 5)
-    {
+        break;
+    case 5:
         comparar_pib_per_capita(nome_a, nome_b, pib_per_capita_a, pib_per_capita_b);
+        break;
     }
 
     return 0;
